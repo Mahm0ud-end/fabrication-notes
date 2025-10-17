@@ -55,7 +55,7 @@ Al, Ti, Cu, Pt, Pd, Ag, Au, Cr, Sn, and Ni *(Ni requires approval).*
 3. Press **Auto Vent** and wait 1 minute; Click **Standby** when done.
 4. Click **lock** to open the chamber.
 5. Prepare clean loading area for wafer dome.
-6. Open the chamber using vacuum gloves and the pneumatic latch. Ensure is locked.
+6. Open the chamber using vacuum gloves and the pneumatic latch. Ensure is latched.
 7. Inspect the dome and chamber for flaking films.
 8. Load clean wafers into the dome:
      - Use wafer dome removal tool to remove wafer dome. Place in clean loading area.
