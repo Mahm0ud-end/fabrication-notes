@@ -72,10 +72,10 @@ Al, Ti, Cu, Pt, Pd, Ag, Au, Cr, Sn, and Ni *(Ni requires approval).*
 12. Close the door, click **Lock**.
 13. Press **Auto Pumpdown**. Wait until chamber reaches 1x10E-3.
     - Once Pumpdown Completed. Click **Abort**.
-    - Click **Manual Mode**
+    - Wait foro Standby and then click **Manual Mode**
 14. At Manual Mode:
     - Click the **Hi-Vac** icon.
-    - Switch to the ion gauge **IG2** at the top.
+    - Wait 15min and then switch to the ion gauge **IG2** at the top.
 
 
 
