@@ -82,7 +82,7 @@ Al, Ti, Cu, Pt, Pd, Ag, Au, Cr, Sn, and Ni *(Ni requires approval).*
 ### 2. Deposition Process
 1. Press Menu on IC6 until you reach the screen menus. Note: If click is not allowed click **STOP**, **RESET**, and **SELECT** again. If you see red letters message repeat this step.
     - Go to **Material** - Overview/Select Material.
-    - Go to **Process** - Select Process/Set Active.
+    - Go to **Process** - Select Overview then Process and Set Active.
     - Go to **Operate** - Toggle Manual. Make sure the top right screen shows MANUAL.
 2. **Pumpdown:** Make sure the chamber reaches ≤ 5×10⁻⁷ Torr. Typically >30 minutes after pumping down.
 3. **Ion Mill (optional):** Ar pressure 1×10⁻⁴ Torr, 100 V, 2 A for surface cleaning.
