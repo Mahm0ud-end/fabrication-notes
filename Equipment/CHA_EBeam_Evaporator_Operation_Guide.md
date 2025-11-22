@@ -80,7 +80,7 @@ Al, Ti, Cu, Pt, Pd, Ag, Au, Cr, Sn, and Ni *(Ni requires approval).*
 
 
 ### 2. Deposition Process
-1. Press Menu on IC6 until you reach the screen menus. Note: If click is not allowed click **STOP**, **RESET**, and **SELECT** again.
+1. Press Menu on IC6 until you reach the screen menus. Note: If click is not allowed click **STOP**, **RESET**, and **SELECT** again. If you see red letters message repeat this step.
     - Go to **Material** - Overview/Select Material.
     - Go to **Process** - Select Process/Set Active.
     - Go to **Operate** - Toggle Manual.
