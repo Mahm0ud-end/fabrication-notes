@@ -83,7 +83,7 @@ Al, Ti, Cu, Pt, Pd, Ag, Au, Cr, Sn, and Ni *(Ni requires approval).*
 1. Press Menu on IC6 until you reach the screen menus. Note: If click is not allowed click **STOP**, **RESET**, and **SELECT** again. If you see red letters message repeat this step.
     - Go to **Material** - Overview/Select Material.
     - Go to **Process** - Select Process/Set Active.
-    - Go to **Operate** - Toggle Manual.
+    - Go to **Operate** - Toggle Manual. Make sure the top right screen shows MANUAL.
 2. **Pumpdown:** Make sure the chamber reaches ≤ 5×10⁻⁷ Torr. Typically >30 minutes after pumping down.
 3. **Ion Mill (optional):** Ar pressure 1×10⁻⁴ Torr, 100 V, 2 A for surface cleaning.
 4. **Deposition Setup Screen:** Click **Deposition**.
@@ -103,6 +103,7 @@ Al, Ti, Cu, Pt, Pd, Ag, Au, Cr, Sn, and Ni *(Ni requires approval).*
    - Start reducing the power smoothly until stop close to the target thickness.
 6. **Completion:**
    - Close the shutter to stop the deposition.
+   - Turn off the **HI VOLT** and **FILAMENT**.
    - After deposition, allow ≥ 10 minutes cooling before venting or switching to a different pocket.
    - Never vent if visible light is emitted from crucible.
 
