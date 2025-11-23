@@ -80,13 +80,14 @@ Al, Ti, Cu, Pt, Pd, Ag, Au, Cr, Sn, and Ni *(Ni requires approval).*
 
 
 ### 2. Deposition Process
-1. Press Menu on IC6 until you reach the screen menus. Note: If click is not allowed click **STOP**, **RESET**, and **SELECT** again. If you see red letters message repeat this step.
+1. Press **MENU** on IC6 until you reach the screen menus. Note: If clicking is not allowed, press **STOP**, **RESET**, and **SELECT** again. If you see a red-letter message, repeat this step.
+    - Note: to select any of the menu you will need to click **MENU** and the **F-keys**
     - Go to **Material** - Overview/Select Material.
     - Go to **Process** - Select Overview then Process and Set Active.
     - Go to **Operate** - Toggle Manual. Make sure the top right screen shows MANUAL.
-2. **Pumpdown:** Make sure the chamber reaches ≤ 5×10⁻⁷ Torr. Typically >30 minutes after pumping down.
-3. **Ion Mill (optional):** Ar pressure 1×10⁻⁴ Torr, 100 V, 2 A for surface cleaning.
-4. **Deposition Setup Screen:** Click **Deposition**.
+3. **Pumpdown:** Make sure the chamber reaches ≤ 5×10⁻⁷ Torr. Typically >30 minutes after pumping down.
+4. **Ion Mill (optional):** Ar pressure 1×10⁻⁴ Torr, 100 V, 2 A for surface cleaning.
+5. **Deposition Setup Screen:** Click **Deposition**.
    - Choose **Sweep Pattern** number.
    - Turn on the **Rotator** button.
    - Select the appropriate **Gun Power**.
@@ -94,14 +95,14 @@ Al, Ti, Cu, Pt, Pd, Ag, Au, Cr, Sn, and Ni *(Ni requires approval).*
    - Confirm correct pocket, gun power, and sweep pattern.
    - Ensure the shutter is closed before engaging the filament.
    - Enable **Filament**, then **High Voltage**.
-5. **Start Deposition:**
+6. **Start Deposition:**
    - Increase the power: Reach rise/soke times. Keep looking for the beam in the chamber at the bottom. Once there is enough material evaporated, you should see the beam from the top mirror too.
    - Make sure the chamber pressure is constant while increasing the power.
    - Optimize Beam Angle and Offset.
    - Click **Shutter Manual Control** . Open Shutter, should become green. 
    - Deposition Starts. Monitor deposition rate.
    - Start reducing the power smoothly until stop close to the target thickness.
-6. **Completion:**
+7. **Completion:**
    - Close the shutter to stop the deposition.
    - Turn off the **HI VOLT** and **FILAMENT**.
    - After deposition, allow ≥ 10 minutes cooling before venting or switching to a different pocket.
