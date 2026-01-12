@@ -29,7 +29,7 @@ The Dicing Saw system is used for cutting semiconductor wafers into individual d
 - Recommended cutting speed: 3-5 mm/sec
 - RPM recommended 30000
 - Maximum Cutting Speed: 15 mm/sec
-- Blade Height: 0.08 mm
+- Blade Height: 0.08 mm (height of blade above the chuck table during dicing (change if mounting a sample to a substrate))
 
 #### **Disco Input**
 - Blade Exposure: 0.9 mm
@@ -63,8 +63,10 @@ The Dicing Saw system is used for cutting semiconductor wafers into individual d
    - Initialize the system. press the **[System Initial]** button in the bottom left hand corner of the **[Main Menu]** screen.
    - Ensure the blade is correctly installed and secured.
    - Verify coolant supply and ensure the coolant tank is filled.
+   - Make sure you have the thickness of the sample, the blade height which is usually 0.08 mm, and the blade exposure (usually 0.9 mm for silicon).
 
 2. **Wafer Loading**
+   - Make sure the sample is coated with protective photoresist (1-2 μm).
    - Mount your wafer onto the dicing tape and dicing ring using the alignment marks on the sheet next to Disco. 
    - Place the ring, tape, wafer setup onto the chuck.
    - Press the **[C/T vacuum]** button on the bottom right if the **[Main Menu]** screen.
@@ -72,14 +74,15 @@ The Dicing Saw system is used for cutting semiconductor wafers into individual d
 
 3. **Load the Blade**
    - Go to **[Blade Maintenance]**
-   - Verify the current blade exposure exceeds i.e. 0.8 mm on silicon blade. Update the rest of the parameters.
-   - Press the **[Blade Replacement]** button. The blade will come forward and the spindle will be locked.
-   - Blade Replacement
+   - Verify the current blade exposure exceeds i.e. 0.9 mm on silicon blade (new is usually 1.1mm). Update the rest of the parameters, image below.
+   - Press the **[Blade Replacement]** button. The blade will come forward and the spindle will be locked, enter the parameters.
+   - Blade Replacement:
      - Remove the front wafer shower module, and gently set aside.
      - Raise the Blade Breakage Detector (BBD). The entire blade should be now visible.
      - Use the blade grabber to remove any blade, and insert the new blade on the spindle.
      - Carefully rotate the spindle until it locks into position. 
      - Screw the blade lock nut over the blade using the nut demounting jig. Turn it by hand until it is tight. Use the torque wrench to tighten until you hear ONE click.
+     - Replace the wafer shower module.
    - Enter the blade exposure. Hit **[ENTER]**. Do not proceed until this value has been saved. Press **[NEXT]**.
    - From the **[Blade Maintenance]** Menu, select **[B.B.D (Blade
 Breakage Detector) Adjustment]** button.
@@ -88,21 +91,22 @@ Breakage Detector) Adjustment]** button.
      - Close the plastic sliding cover and press **[NEXT]**.
    - From the **[Blade Maintenance]** Menu, select the **[Blade Setup]** button.
      - From the **[Setup Menu]**, press the **[Non-Contact]** button.
-     - Press the **[START]** button and allow the blade setup to complete before moving to the next step. Press the **[EXIT]**
+     - Press the **[START]** button and allow the blade setup to complete before moving to the next step. Make sure that 0.00 mm is consumed meaning that the there is more than or equal to of the blade exposure value you entered. Press the **[EXIT]**
 
 4. **Perform a Hair Alignment**
    - From the **[Blade Maintenance]** Menu, select **[Hairline Alignment]**.
-   - Input the dicing parameters for your wafer. Hit **[ENTER]** to save your parameters.
+   - Input the dicing parameters for your wafer: they are as follows(Hit **[ENTER]** to save your parameters.):
+   - 
    - Manual θ alignment
-     - Correct the θ-angle by moving left and right on known structures on the wafer.
-     - Make sure you are on HIGH magnification
-     - Move the crosshairs to the useless part of the wafer you want to do your test cut on. Hit **[START]**.
-     - Match the width of the hairline cut, and press **[Hairline Adj]**. If successful, the information bar will read, **[Hairline Adjusted]**. 
-     - Press the yellow **[EXIT]** button twice to return the **[Main Menu]** screen
+     - Correct the θ-angle by moving left and right on known structures on the wafer. Start from a point on the **[right]** side of the wafer after you use low resolution and focus, then press **[θ]**, it will move to the left side, align to corresponding point on same level, then press **[θ]** again. After roughly adjusting the angle, switch to high magnification and fine tune the theta alignment.
+  
+     - Move the crosshairs to the useless part of the wafer you want to do your test cut on. Hit **[START]** (Make sure you are on HIGH magnification when you are startring the cut, because the position of the cut correspnds to what the high magnification camera is looking at).
+     - Match the width of the hairline cut, and press **[Hairline Adj]**. The UI will expect you to adjust the width, press narrow or widen, then press **[Hairline Adj]** again. If successful, the information bar will read, **[Hairline Adjusted]**. 
+     - Press the yellow **[EXIT]** button twice to return to the **[Main Menu]** screen
 
 5. **Recipe/Job Setup**
    - Open the control software and select a dicing recipe.
-   - Specify the blade type, spindle speed, cutting speed, tape thickness, and cut depth.
+   - Specify the blade type, spindle speed, cutting speed, tape thickness, and cut depth, channels angles and channels indices.
    - Check if the recipe was loaded correctly.
      - Make sure the dicing parameters are set correctly.
      - You can set the indices if it is required to get the job done. 
@@ -110,12 +114,14 @@ Breakage Detector) Adjustment]** button.
 6. **Dicing Process [Semi-Automatic Cutting]**
    - Press **[Manual Operation]** button, then press the **[Semi-Automatic Cutting]** button.
    - The next step is to align the wafer. Press **[Manual Alignment]**.
-   - Make sure you are on **HIGH** Magnification.
-   - Once the alignment is done, press the blue **[ENTER]** button to go back to the **[Semi Auto Cut.]**
-   - Ensure all starting conditions are green.
-   - Start the dicing process by simply hit the green **[START]** button.
-   - Monitor the process parameters (spindle speed, cutting speed, coolant flow) in real-time.
-   - Allow the system to complete the specified cuts.Silence the alarm with the **[Alarm Clear]** button.
+   - perform theta alignment. Once the alignment is done, press the blue **[ENTER]** button to go back to the **[Semi Auto Cut.]**
+   - Adjust the X and Y position (mainly y position) of the wafer to the starting cut line. and make sure you are on **HIGH** magnification before you start dicing. The cuts go to the +y direction, meaning the blade moves towards you standing infront of the tool (don't get confused). That's because the wafer's flat is on the opposite side of you.
+   - Enter the number of cut lines, and choose FORWARD direction.
+   - Ensure all starting conditions are green. and that the tool is using your recipe and paramters.
+   - Start the dicing procaess by simply hit the green **[START]** button (you might need to press it twice).
+   - Monitor the process parameters (spindle speed, cutting speed, coolant flow) in real-time: BLADE ∼ 1.5 (L/min.), SHOWER ∼ 1.0 (L/min.), and SPRAY ∼ 1.0 (L/min.).
+   - Allow the system to complete the specified cuts. Silence the alarm with the **[Alarm Clear]** button.
+   - You can change the channel and repeat, the theta alignment should be maintined when you change the channel.
 
 
 
